@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <div class="justify-center w-full items-center flex">
+    <div class="justify-center w-full items-center flex flex-col gap-8">
       <div class="bg-green-200 w-2/3">
         <h1 class="font-bold text-center text-5xl p-10">People Entered:</h1>
         <p id="count-ul" class="font-bold text-center text-3xl">0</p>
@@ -37,6 +37,47 @@
           Previous Entries:
         </h1>
       </div>
+      <!-- RENDER AN ERROR MESSAGE WHEN THE PURCHASE BUTTON IS CLICKED -->
+      <div>
+        <div class="w-60">
+          <img src="./images/Shoes-Men.webp" alt="" />
+        </div>
+        <button
+          class="bg-blue-200 p-4 text-white font-bold w-60 rounded-md items-center"
+          onclick="render()"
+        >
+          Purchase $1,500
+        </button>
+        <p id="error"></p>
+      </div>
+    </div>
+    <div class="justify-center w-full items-center flex flex-col gap-8">
+      <div class="flex gap-4">
+        <span id="num1" class=""></span>
+        <span id="num2" class=""></span>
+      </div>
+      <button
+        class="bg-blue-200 p-4 text-white font-bold w-60 rounded-md items-center"
+        onclick="Add()"
+      >
+        ADD</button
+      ><button
+        class="bg-blue-200 p-4 text-white font-bold w-60 rounded-md items-center"
+        onclick="Substract()"
+      >
+        SUBSTRACT</button
+      ><button
+        class="bg-blue-200 p-4 text-white font-bold w-60 rounded-md items-center"
+        onclick="Divide()"
+      >
+        DIVIDE</button
+      ><button
+        class="bg-blue-200 p-4 text-white font-bold w-60 rounded-md items-center"
+        onclick="Multiply()"
+      >
+        MULTIPLY
+      </button>
+      <span id="sum-el"> </span>
     </div>
 
     <script src="index.js"></script>
